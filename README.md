@@ -1,2 +1,23 @@
-# HA-Community-Device-Ranking
-A list of good and bad device manufacturers as collated by the HomeAssistant community on r/homeassistant
+# Smart Device Reviews
+
+As collated by the Home Assistant community on [r/homeassistant](https://reddit.com/r/homeassistant).
+
+## Adding Devices
+
+- Suggestions are all added by the commuinity and are in now way official recommendations from the HA team
+- To add a new suggestion, make an Issue or Pull Request detailing why you think it should be added to the list. After any disccusions from other users have taken place, it will either be added or closed, based on the general concensus of the community
+- The same process applys for removing suggestions, although the barrier to do so is higher than adding one
+
+| Manufacturer | Device                                             | Recommended?  | Model                                 | Protocol | Reason                                                                                                                             | Work Arounds?                                     |
+|--------------|----------------------------------------------------|-------------- |---------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| TuYa         | Smart Plug with energy monitoring                  | ❌            | TS011F_plug_3                         | Zigbee   | Drop off from net, broken kwh meter, no alternative firmware                                                                       | KWh meter: fixed in Z2M Edge release.             |
+| TuYa         | Smart Plug                                         | ❌            | TS011F_plug_2                         | Zigbee   | Constantly drop off from network, not allowing end devices to join                                                                 |                                                   |
+| TuYa         | Temp/humidity sensor                               | ❌            | TS0201                                | Zigbee   | Constantly drop off from network                                                                                                   |                                                   |
+| TuYa         | Leak detector                                      | ❌            | TS0207                                | Zigbee   | Constantly drop off from network                                                                                                   |                                                   |
+| TuYa         | Motion Sensor                                      | ❌            | TuYa TS0202                           | Zigbee   | Incorrect detection of motion                                                                                                      |                                                   |
+| Sonoff       | Smart switch                                       | ❌            | S31ZB                                 | Zigbee   | Does not allow end devices to join                                                                                                 |                                                   |
+| Juno         | Smart light (canless wafer)                        | ❌            | WF6C RD TUWH MW M6                    | Zigbee   | Constant dropoffs                                                                                                                  |                                                   |
+| Juno         | Smart light (canless wafer)                        | ❌            | WF6C REG TUWH MW M6                   | Zigbee   | Constant dropoffs                                                                                                                  |                                                   |
+| Aqara        | Motion Sensor                                      | ❌            | ? lumi.sensor_motion.aq2              | Zigbee   | Constant dropoffs, slow detection                                                                                                  |                                                   |
+| Aqara        | Door Sensor                                        | ❌            | ? lumi.sensor_magnet                  | Zigbee   | Fine at first, but some units drop off when reporting about 80% battery left (this triggers "open" related automations)            |                                                   |
+| Aqara        | Light Sensor                                       | ❌            | ? lumi.sen_ill.mgl01                  | Zigbee   | Constant dropoffs                                                                                                                  |                                                   |
